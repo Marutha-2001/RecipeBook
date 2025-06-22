@@ -1,0 +1,122 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fdf6e3;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #6b4f4f;
+}
+
+form {
+  max-width: 600px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, textarea, button {
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #6b4f4f;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#searchBox {
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  font-size: 16px;
+  width: 80%;
+  max-width: 600px;
+}
+
+#recipeList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.recipe-card {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 15px;
+  width: 250px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  position: relative;
+  border-radius: 8px;
+}
+
+.recipe-card h3 {
+  margin-top: 0;
+}
+
+.recipe-image {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.delete-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.dark-mode {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+}
+
+.dark-mode input,
+.dark-mode textarea,
+.dark-mode button,
+.dark-mode #searchBox {
+  background-color: #2c2c2c;
+  color: #f5f5f5;
+  border: 1px solid #555;
+}
+
+.dark-mode .recipe-card {
+  background-color: #333;
+  border-color: #444;
+}
+
+#toggleTheme, #exportBtn {
+  margin: 10px auto;
+  display: block;
+  padding: 10px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#toggleTheme {
+  background-color: #6b4f4f;
+}
+
+#exportBtn {
+  background-color: green;
+}
+
+#category {
+  padding: 10px;
+  font-size: 16px;
+}
